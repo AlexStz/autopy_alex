@@ -6,11 +6,9 @@
 #include "rgb.h"
 #include <assert.h>
 
-#if defined(_MSC_VER)
-	#include "ms_stdint.h"
-#else
+
 	#include <stdint.h>
-#endif
+
 
 struct _MMBitmap {
 	uint8_t *imageBuffer;  /* Pixels stored in Quad I format; i.e., origin is in

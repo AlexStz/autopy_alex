@@ -1,11 +1,9 @@
 #ifndef DEADBEEF_RAND_H
 #define DEADBEEF_RAND_H
 
-#if defined(_MSC_VER)
-	#include "ms_stdint.h"
-#else
+
 	#include <stdint.h>
-#endif
+
 
 #define DEADBEEF_MAX UINT32_MAX
 

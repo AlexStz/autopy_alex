@@ -4,11 +4,9 @@
 
 #include <stddef.h>
 
-#if defined(_MSC_VER)
-	#include "ms_stdint.h"
-#else
+
 	#include <stdint.h>
-#endif
+
 
 /* Decode a base64 encoded string discarding line breaks and noise.
  *

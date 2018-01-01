@@ -2,11 +2,9 @@
 #ifndef ALERT_H
 #define ALERT_H
 
-#if defined(_MSC_VER)
-	#include "ms_stdbool.h"
-#else
+
 	#include <stdbool.h>
-#endif
+
 
 /* Displays alert with given attributes, and blocks execution until the user
  * responds. Returns 0 if defaultButton was pressed, 1 if cancelButton was

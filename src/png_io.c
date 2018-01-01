@@ -5,13 +5,10 @@
 #include <stdlib.h> /* malloc/realloc */
 #include <assert.h>
 
-#if defined(_MSC_VER)
-	#include "ms_stdint.h"
-	#include "ms_stdbool.h"
-#else
+
 	#include <stdint.h>
 	#include <stdbool.h>
-#endif
+
 
 const char *MMPNGReadErrorString(MMIOError error)
 {

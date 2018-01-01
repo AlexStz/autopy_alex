@@ -4,11 +4,9 @@
 
 #include "types.h"
 
-#if defined(_MSC_VER)
-	#include "ms_stdbool.h"
-#else
+
 	#include <stdbool.h>
-#endif
+
 
 /* Returns the size of the main display. */
 MMSize getMainDisplaySize(void);

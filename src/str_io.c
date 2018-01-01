@@ -8,11 +8,9 @@
 #include <string.h> /* strlen() */
 #include <assert.h>
 
-#if defined(_MSC_VER)
-	#include "ms_stdbool.h"
-#else
+
 	#include <stdbool.h>
-#endif
+
 
 #define STR_BITS_PER_PIXEL 24
 #define STR_BYTES_PER_PIXEL ((STR_BITS_PER_PIXEL) / 8)

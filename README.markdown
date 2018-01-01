@@ -35,7 +35,9 @@ by Michael Sanders
 
 AutoPy is a simple, cross-platform GUI automation toolkit for Python. It includes functions for controlling the keyboard and mouse, finding colors and bitmaps on-screen, and displaying alerts -- all in a cross-platform, efficient, and simple manner.
 
-Works on Mac OS X, Windows, and X11.
+This fork is Python 3 compatible.
+
+Works on Mac OS X, Windows, and X11. (Tested only Windows)
 
 <div id="autopy-getting-started"></div>
 
@@ -45,7 +47,7 @@ Works on Mac OS X, Windows, and X11.
 
 ### Requirements
 
-* Python 2.5+
+* Python 2.5+ (Tested on Python 3.6)
 * For Mac OS X:
 	- zlib
 	- libpng (see [here](http://ethan.tira-thompson.org/Mac_OS_X_Ports.html) for a simple installer)
@@ -68,8 +70,8 @@ For every other OS, the simplest method is to use the `easy_install` utility:
 
 Another option is to compile from the latest source on the GitHub repository:
 
-	$ git clone git://github.com/msanders/autopy.git
-	$ cd autopy
+	$ git clone git://github.com/alexstz/autopy-alex.git
+	$ cd autopy-alex
 	$ python setup.py build
 	# python setup.py install
 
@@ -161,7 +163,7 @@ AutoPy uses a coordinate system with its origin starting at the top-left, so thi
 	>>> hex(autopy.bitmap.capture_screen().get_color(1, 1))
 	'0xF2F2F2'
 
-This is obviously an RGB hexadecimal value, identical those used in HTML and CSS. We could also have done: 
+This is obviously an RGB hexadecimal value, identical those used in HTML and CSS. We could also have done:
 
 	>>> import autopy
 	>>> autopy.color.hex_to_rgb(autopy.screen.get_color(1, 1))

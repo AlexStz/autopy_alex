@@ -5,11 +5,9 @@
 #include "os.h"
 #include "types.h"
 
-#if defined(_MSC_VER)
-	#include "ms_stdbool.h"
-#else
+
 	#include <stdbool.h>
-#endif
+
 
 #if defined(IS_MACOSX)
 
